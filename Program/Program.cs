@@ -42,3 +42,9 @@ string[] ArrayFilter(string[] array)
 
 }
 
+
+Console.Clear();
+string[] array = FillArray();
+Console.WriteLine($"Заданный массив: [{String.Join(", ", array)}]");
+string[] result = ArrayFilter(array);
+Console.WriteLine($"Итоговый массив: [{String.Join(", ", result)}]");
