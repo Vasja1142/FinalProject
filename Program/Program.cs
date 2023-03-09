@@ -16,4 +16,29 @@ string[] FillArray()
 
 }
 
+string[] ArrayFilter(string[] array)
+{
+    
+    int length = 0;
+    string text = string.Empty;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) 
+        {
+            length++;
+        }
+    }
+
+    int value = 0;
+    string[] result = new string[length];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            result[value++] = array[i];
+        }
+    }
+    return result;
+
+}
 
